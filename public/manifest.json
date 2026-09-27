@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "LinkSlope — Broken Link Checker",
+  "version": "0.1.0",
+  "description": "Scan a website for broken links and see which pages link to them.",
+  "permissions": [
+    "webRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "minimum_chrome_version": "116",
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_title": "Open LinkSlope",
+    "default_icon": {
+      "16": "icons/linkslope-16.png",
+      "32": "icons/linkslope-32.png",
+      "48": "icons/linkslope-48.png",
+      "128": "icons/linkslope-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "short_name": "LinkSlope",
+  "icons": {
+    "16": "icons/linkslope-16.png",
+    "32": "icons/linkslope-32.png",
+    "48": "icons/linkslope-48.png",
+    "128": "icons/linkslope-128.png"
+  }
+}
